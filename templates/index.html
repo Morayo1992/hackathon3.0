@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>First-Aid AI App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Emergency First-Aid AI</h1>
+    <form id="symptomForm">
+        <textarea name="symptoms" placeholder="Enter your symptoms..." required></textarea>
+        <button type="submit">Get Advice</button>
+    </form>
+    <div id="advicePanel"></div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
